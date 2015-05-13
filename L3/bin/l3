@@ -1,0 +1,6 @@
+#!/bin/sh
+# The l3hol script (with quote preprocessing)
+
+L3DIR=$(dirname $0)
+
+$L3DIR/unquote | $L3DIR/l3hol.run -i -q $@ --use $L3DIR/pd.sml
